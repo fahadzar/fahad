@@ -110,7 +110,17 @@
             background-color: var(--light-gray);
             color: var(--dark-color); /* لون الأيقونة عند التمرير */
         }
-
+        
+        /* تنسيق مميز لأيقونة الاتصال */
+        .contact-link.call-icon .fa-phone-volume {
+            color: #ffc107; /* لون أصفر ذهبي - يمكنك تغييره */
+            font-size: 1.3em; /* تكبير حجم الأيقونة */
+        }
+        
+        .contact-link.call-icon:hover .fa-phone-volume {
+            color: #d4a305; /* لون أغمق قليلاً عند التمرير */
+        }
+        
         .whatsapp-link {
             background-color: #25D366; /* لون واتساب */
             color: #fff;
@@ -410,7 +420,7 @@
             </div>
             <div class="contact-info">
                 <a href="tel:+966552821033" class="contact-link call-icon" aria-label="اتصل بي">
-                    <i class="fa-solid fa-headphones"></i>
+                    <i class="fa-solid fa-phone-volume"></i>
                 </a>
                 <a href="https://wa.me/966552821033" target="_blank" class="contact-link whatsapp-link" aria-label="مراسله عبر الوتساب">
                     <i class="fa-brands fa-whatsapp"></i> واتساب
